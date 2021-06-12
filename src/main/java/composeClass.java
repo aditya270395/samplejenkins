@@ -13,8 +13,11 @@ public class composeClass extends BaseClass {
     @FindBy(xpath="//textarea[@name='to']") private WebElement to;
     @FindBy(xpath="//input[@name='subjectbox']") private WebElement sub;
     @FindBy(xpath="//div[@aria-label='Message Body']") private WebElement body;
-    @FindBy(xpath="//tbody/tr[1]/td[5]/div[1]/div[1]/div[1]/div[2]") private WebElement label;
-    @FindBy(xpath="//div[@class=\"J-Ph Gi J-N\"]") private WebElement labeloption;
+    //@FindBy(xpath="//body[1]/div[23]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[1]/div[4]/table[1]/tbody[1]/tr[1]/td[5]/div[1]/div[1]/div[1]/div[2]") private WebElement label;
+   @FindBy(xpath="//tbody/tr[1]/td[5]/div[1]/div[1]/div[1]/div[2]") private WebElement label;
+  // @FindBy(xpath ="//body[1]/div[23]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[7]/div[1]/div[3]/div[1]") private WebElement labeloption;
+    @FindBy(xpath="//div[@class='J-Ph Gi J-N']") private WebElement labeloption;
+
 
     @FindBy(xpath="//div[@title='Social']") private WebElement socialable;
     @FindBy(xpath="//div[contains(@data-tooltip,'Messages from social networks,')]") private WebElement social;
